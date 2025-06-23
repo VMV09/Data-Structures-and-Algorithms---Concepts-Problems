@@ -16,3 +16,14 @@ print(res)
 # Time Complexity -> O(n)
 # This time cannot be reduced for finding largest element in an unsorted array.
 # O(n) remains the best time complexity that can be achieved.
+
+# The same question can be solved using Recursion
+def findlargest(a):
+    if len(a) == 1:
+        return a[0]
+  else:
+        return max(a[0], largest(a[1:]))
+      
+a = [10, 33, 21, 78, 12]
+res = findlargest(a)
+print(res)
