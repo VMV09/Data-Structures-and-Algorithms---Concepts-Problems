@@ -18,3 +18,19 @@
      - Encapsulation
      - Polymorphsim
  - **Design Patterns**
+     - The Algorithmic Design Pattern:
+        - Recursion
+        - Amortization
+        - Divide and Conquer
+        - Prune and Search - Decrease and Conquer
+        - Brute Force
+        - Dynamic Programming
+        - The Greedy Method
+    - Software Engineering Design Patterns:
+        - Iterator
+        - Adapter
+        - Position
+        - Composition
+        - Template Method
+        - Locator
+        - Factory Method
