@@ -9,3 +9,4 @@
  - As the goals of OOPs implies, an Object is an instance of a Class.
  - Each class typically specifies instances variables, also known as data members, that the object contains, as well as the methods, also known as member functions.
  - **Object Oriented Design Goals**
+     - Software Implementation should achieve robustness, adaptability, and resuability.
