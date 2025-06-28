@@ -10,3 +10,7 @@ same time provide the details necessary to actually use the abstraction in a pro
 class Fraction:
   # the methods go here
 ```
+- The first method that all classes should provide is the constructor.
+- The constructor defines the way in which data objects are created.
+- To create a `Fraction` object, we will need to provide two pieces of data - the numerator, and the denominator.
+- In Python, the constructor method is always called `__init__`.
