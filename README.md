@@ -7,5 +7,5 @@
  
  ## Goals, Principles and Patterns:
  - As the goals of OOPs implies, an Object is an instance of a Class.
- - Each class typically specifies instances variables, also known as data members, that the object contains, as well as the methods, also known as member functions.<br>
- **- Object Oriented Design Goals**
+ - Each class typically specifies instances variables, also known as data members, that the object contains, as well as the methods, also known as member functions.
+ - **Object Oriented Design Goals**
