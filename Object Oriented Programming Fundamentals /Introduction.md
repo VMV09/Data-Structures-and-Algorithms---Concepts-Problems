@@ -14,3 +14,14 @@ class Fraction:
 - The constructor defines the way in which data objects are created.
 - To create a `Fraction` object, we will need to provide two pieces of data - the numerator, and the denominator.
 - In Python, the constructor method is always called `__init__`.
+
+```
+class Fraction:
+  def __init__(self, top, bottom):
+      self.num = top
+      self.den = bottom
+```
+
+- The Formal Parameters i.e. the list of parameters passed to the constructor `__init__`.
+  - Self is a **special parameter** that will always be used to as a reference back to the object itself.  It must always be the first formal parameter; **however, it will never be given an actual parameter valueupon invocation.**
+  -  The notation self.num in the constructor defines the fraction object to have an internal data object called num as part of its state. Likewise, **self.den creates the denominator.**
