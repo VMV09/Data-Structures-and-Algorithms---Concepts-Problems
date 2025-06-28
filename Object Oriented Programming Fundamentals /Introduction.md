@@ -25,3 +25,11 @@ class Fraction:
 - The Formal Parameters i.e. the list of parameters passed to the constructor `__init__`.
   - Self is a **special parameter** that will always be used to as a reference back to the object itself.  It must always be the first formal parameter; **however, it will never be given an actual parameter valueupon invocation.**
   -  The notation self.num in the constructor defines the fraction object to have an internal data object called num as part of its state. Likewise, **self.den creates the denominator.**
+
+- To create an instance of the `Fraction` class, we must invoke the constructor.
+- This happens by using the name of the class and passing actual values for the neceessary state - `we never directly invoke __init__`
+
+```
+my_fraction = Fraction(3, 5)
+```
+- This creates an object called `my_fraction` represeting the fraction 3 / 5.
