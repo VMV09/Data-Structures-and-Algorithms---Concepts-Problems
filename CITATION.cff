@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this book for your work, please cite it as below."
+authors:
+  - family-names: Goodrich
+    given-names: Michael T.
+  - family-names: Tamassia
+    given-names: Roberto
+  - family-names: Goldwasser
+    given-names: Michael H.
+title: "Data Structures and Algorithms in Python"
+version: "1st Edition"
+date-released: 2013-03-18
+publisher: Wiley
+isbn: "978-1-118-29027-9"
+url: "https://nibmehub.com/opac-service/pdf/read/Data%20Structures%20and%20Algorithms%20in%20Python.pdf"
+type: book
+
