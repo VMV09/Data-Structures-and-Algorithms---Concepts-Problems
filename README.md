@@ -1,4 +1,4 @@
-﻿# DSA-Problems
+﻿# Data Structures and Algorithm in Python - Concepts & Problems
 
  Data Structures and Algorithms has been a core and recognized as a vital subject in computing and for computer engineering undergraduates. This Github Reposiroty has been desinged to cater to beginning friendly and slowly metamorphises and cater to advanced levels. <br>
  <br>
