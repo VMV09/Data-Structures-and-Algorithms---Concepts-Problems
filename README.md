@@ -4,5 +4,6 @@
  <br>
  Rather than simply viweing data as a collection of bytes and addresses, we think of data objects as instances of an abstract data types, which includes a repertoire of methods for performing operations on data objects of this type.
  <hr/>
- Goals, Principles and Patterns:
+ 
+ ##Goals, Principles and Patterns:
  - As the goals of OOPs implies, an Object is an instance of a class.
