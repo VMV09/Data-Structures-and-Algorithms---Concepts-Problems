@@ -35,7 +35,7 @@
         - Locator
         - Factory Method
 <hr/>
-## **Algorithms**
+## Algorithms
 - By looking at how others approach a given problem, and at their solution, we can learn solving them on our own.
 - By seeing how different approach and techniques (ALGORITHMS) are designed helps us to take on the next challenging problem that we are given.
 - By considering a number of different algorithms, we can begin to develop pattern recognition so that the next time a similar problem arises, we are better able to solve it.
