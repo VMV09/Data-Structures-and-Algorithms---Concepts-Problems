@@ -6,4 +6,7 @@ same time provide the details necessary to actually use the abstraction in a pro
 - Whenever we want to implement an abstract data type, we will do so with a new class.
 
 ## A Fraction Class
-
+```
+class Fraction:
+  # the methods go here
+```
