@@ -20,3 +20,27 @@ for i in range(10)
 a_number = int(input("Please enter an integer"))
 print(math.sqrt(a_number))
 ```
+- We handle this exception by calling the print function withing a try block, and a corresponding except block catches the exception, orints the message within except and continues program execution.
+``` python
+number = int(input("Please enter an integer"))
+try:
+  print(math.sqrt(number))
+except:
+  print("Negative Number for Square Root")
+  print(math.sqrt(abs(number)))
+```
+- Python provides provisions for the programmer to cause a runtime exception by using the `raise` statement.
+- Instead of calling the square root function with a negative number, we could have checked the value first and then raised our own exception.
+- The code snippet below shows the result of creating a new RuntimeError exception.
+- `Note that the program would still terminate but now the exception that caused the termination is something explicitly created by the programmer.`
+``` python
+if number < 0:
+  raise RuntimeError("YOu cannot enter a negative number")
+else:
+  print(math.sqrt(number))
+```
+- You can see the Python reference manual for a list of all the available exception types and for
+ how to create your own exceptions and raises.
+
+**YOU ARE ADVISED TO EXECUTE ALL THE CODE SNIPPETS FOR GAINING CLARITY AND CONCEPTUAL UNDERSTANDING.**
+**ALSO FEEL FREE TO CHANGE AND MANIPULATE THE CODE SNIPPETS ON YOU OWN AND TRY TO LEARN THE BEHAVIOUR OF THE PROGRAM UNDER THESE MODIFICATIONS.**
