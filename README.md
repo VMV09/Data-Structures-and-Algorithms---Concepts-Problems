@@ -34,6 +34,7 @@
         - Template Method
         - Locator
         - Factory Method
+
 <hr/>
 
 ## Algorithms
