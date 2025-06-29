@@ -6,7 +6,7 @@ same time provide the details necessary to actually use the abstraction in a pro
 - Whenever we want to implement an abstract data type, we will do so with a new class.
 
 ## A Fraction Class
-```
+``` python
 class Fraction:
   # the methods go here
 ```
@@ -15,7 +15,7 @@ class Fraction:
 - To create a `Fraction` object, we will need to provide two pieces of data - the numerator, and the denominator.
 - In Python, the constructor method is always called `__init__`.
 
-```
+``` python
 class Fraction:
   def __init__(self, top, bottom):
       self.num = top
@@ -29,7 +29,7 @@ class Fraction:
 - To create an instance of the `Fraction` class, we must invoke the constructor.
 - This happens by using the name of the class and passing actual values for the neceessary state - `we never directly invoke __init__`
 
-```
+``` python
 my_fraction = Fraction(3, 5)
 ```
 - This creates an object called `my_fraction` represeting the fraction 3 / 5.
