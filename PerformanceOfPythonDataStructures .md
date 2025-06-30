@@ -57,3 +57,16 @@ print(f"Concatenation - {t4.timeit(number = 10000) } millisecond")
 - It is interesting to note that the list comprehension is twice as fast as a `for` loop with an `append` operation.
 -  In this case the statement `from __main__ import test1` imports the function `test1` from the `__main__` namespace into the namespace that timeit sets up for the timing experiment.
 -  The `timeit` module does this because it wants to run the timing tests in an environment that is uncluttered by any stray variables you may have created, that may interfere with your function’s performance in some unforeseen way.
+
+- The `pop` has two different times , it runs in O(1) when called on the end of the list, and runs in O(n) if called in the beginning of the list, or anywhere in the middle of the list.
+-  The reason for this lies in how Python chooses to implement lists.
+-  When an item is taken from the front of the list, in Python’s implementation, all the other elements in the list are shifted one position closer to the beginning.
+-  This may seem silly to you now, but if you look this implementation also allows the index operation to be O(1).
+-  This is a tradeoff that the Python implementors thought was a good one.
+
+<hr/>
+
+# Dictionaries
+-  The second major Python data structure is the dictionary. As you probably recall, dictionaries differ from lists in that you can access items in a dictionary by a key rather than a position.
+-  The thing that is most important to notice right now is that the get item and set item operations on a dictionary are O(1).
+-  Another important dictionary operation is the contains operation. Checking to see whether a key is in the dictionary or not is also O(1).
