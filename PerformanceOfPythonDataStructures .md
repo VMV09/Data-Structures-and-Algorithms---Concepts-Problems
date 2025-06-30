@@ -72,6 +72,9 @@ print(f"Concatenation - {t4.timeit(number = 10000) } millisecond")
 -  Another important dictionary operation is the contains operation. Checking to see whether a key is in the dictionary or not is also O(1).
 - However we must not ignore the possibility of get items and set items operations to degenrate to O(n) performance but we will discuss that later.
 - For now, the Big-O Performance metrics below assumes an average performance.
-<ul>
-  <li> **Operation**      **Time**</li>
-</ul>
+- `Copy Operation - O(n)`
+- `get item - O(1)`
+- `set item - O(1)`
+- `delete item - O(1)`
+- `contains - O(1)`
+- `iteration - O(n)`
