@@ -28,3 +28,31 @@ a = [10, 20, 30, 40]
 for i in range(len(a)):
   print(a[i])
 ```
+## Adding Elements to the List
+- There are various methods and logics to add elements to a list.
+- We shall first initialise an empty list.
+- Python provides a built-in function `append()` to add an element to the list. The element to be added is specified within the paraentheses of the `append` function.
+``` python
+a = []
+a.append(10)
+print(a)
+```
+- Another important and well used function is `insert()`.
+- The function takes the position in the list where the element is to be inserted as well as the element to be inserted into the list.
+- The below code inserts at position 0, the element 5.
+``` python
+a = []
+a.insert(0, 5)
+print(a)
+```
+- The last method the python provides to add elements to the list is the `extend()` function.
+- The `extend()` function works very similar to the `append()`, but the only flexibility that `extend` provides is - while `append` can add single individual element, `extend()` can add multiple elements in one go to the list.
+- Check the code below.
+``` python
+a = []
+a.extend([15, 20, 25])
+print(a)
+```
+- It is worth noting that `insert()` takes O(n) time to execute, while `append()` runs in a constant time o(1). **For more detailed view on performance of data structure in python, refer `PerformanceofDataStrucutres.md`.**
+- **It is important to remember that both `append()` and `extend()` adds elements at the end of the list only.**
+- **To insert the element at a position of our desire, we are obliged to use the `insert()` function.**
