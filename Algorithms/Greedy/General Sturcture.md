@@ -1,0 +1,21 @@
+- A greedy algorithm solves problems by making the best choice at each step.
+- Instead of looking at all possible solutions, it focuses on the option that seems best right now.
+# Problem Structure
+- Most of the problems in Greedy follows by two property -
+  - Choosing the est possible option at ach step will lead to the best overall solution.
+  - Break the problem down into smaller parts, and solving thee smaller parts by making greedy choices.
+- One of the most important feature of greedy is - it solves the problems that have an maximising and minimising a quantity
+- Most of all Greedy Algorithms can in a way be solved using Dynamic Programming.
+- DP proves to be more efficient in terms of approaching and solving the problem than Greedy.
+## Some Common Ways to Solve Greedy
+- Sorting:
+    - Job Sequencing:
+        - In order to maximize profits, we prioritize jobs with higher profits.
+        - So we sort them in descending order based on profit.
+        - For each job, we try to schedule it as late as possible within its deadline to leave earlier slots open for other jobs with closer deadlines.
+    - Activity Selection:
+    - Disjoint Intervals
+    - Fractional KnapSack:
+    - Kruskal Algorithm:
+- Using Priority Queue or Heaps
+- Arbitrary
