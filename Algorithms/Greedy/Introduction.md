@@ -22,7 +22,7 @@ Step 03: Repeat the process until the amount to be changed becomes 0.
 ```python
 def minCoins(coins, amount):
   coins.sort(reverse=True)
-  res = []
+  result = []
 
   for coin in coins:
     while amount >= coin:
@@ -44,4 +44,12 @@ if change:
     print(f"Coins used: {change}")
     print(f"Total coins: {len(change)}")
 ```
-
+## Why Greedy is not Optimal?
+- When using the greedy approach to make change for the amount 20 with the coin denominations [18, 1, 10], the algorithm starts by selecting the largest coin value that is less than or equal to the target amount.
+- In this case, the largest coin is 18, so the algorithm selects one 18 coin.
+- After subtracting 18 from 20, the remaining amount is 2.
+- At this point, the greedy algorithm chooses the next largest coin less than or equal to 2, which is 1.
+- It then selects two 1 coins to make up the remaining amount.
+- So, the greedy approach results in using one 18 coin and two 1 coins.
+- However, the greedy approach fails to find the optimal solution in this case.
+- Although it uses three coins, a better solution would have been to use two 10 coins, resulting in a total of only two coins (10 + 10 = 20).
