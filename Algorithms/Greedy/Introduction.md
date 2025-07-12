@@ -22,6 +22,17 @@ Step 03: Repeat the process until the amount to be changed becomes 0.
 ```python
 def minCoins(coins, amount):
   n = len(coins)
+  coins.sort(reverse=True)
+  res = 0
 
+  for i in range(n):
+    if amount >= coins[i]:
+      cnt += amount // coins[i]
+      res += cnt
+      amount -= cnt * coins[i]
+
+    if amount == 0:
+      break
+  return res
 ```
 
