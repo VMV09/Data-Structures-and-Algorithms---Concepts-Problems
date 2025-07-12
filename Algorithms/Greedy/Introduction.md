@@ -12,3 +12,16 @@
 ## Coin Change Problem
 Let's say you have a set of coins with values `[1, 2, 5, 10]`.
 You need to give minimum number of coins to someone a change for 39.
+```
+Step 01: Start with the Largest coin value that is less than or equal to the amount to be chnaged.
+Step 02: Subtract the largest coin value from the amount to be changed, and add the coin to the solution.
+Step 03: Repeat the process until the amount to be changed becomes 0.
+```
+- The code below gives the implementation of the solution.
+
+```python
+def minCoins(coins, amount):
+  n = len(coins)
+
+```
+
