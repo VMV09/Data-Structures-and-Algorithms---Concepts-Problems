@@ -21,18 +21,27 @@ Step 03: Repeat the process until the amount to be changed becomes 0.
 
 ```python
 def minCoins(coins, amount):
-  n = len(coins)
   coins.sort(reverse=True)
-  res = 0
+  res = []
 
-  for i in range(n):
-    if amount >= coins[i]:
-      cnt += amount // coins[i]
-      res += cnt
-      amount -= cnt * coins[i]
+  for coin in coins:
+    while amount >= coin:
+      amount = amount - coin
+      resulta.ppend(coin)
 
-    if amount == 0:
-      break
-  return res
+  if amount != 0:
+    print("Change cannpt be made with given denominations.")
+    return None
+
+  return result
+
+# Example usage:
+coins = [1, 5, 10, 25]
+amount = 63
+
+change = greedy_coin_change(coins, amount)
+if change:
+    print(f"Coins used: {change}")
+    print(f"Total coins: {len(change)}")
 ```
 
