@@ -29,9 +29,9 @@
  looked at is at the base. If you click on the Back button, you begin to move in reverse order
  through the pages.`
 - The stack operations are given below.
- - `Stack()`: creates a new empty task. Needs no parameter and returns an empty stack.
- - `push(item`: adds a new item to the top of the stack. It needs the item and return nothing.
- - `pop()`: removes the top item from the stack. It needs no parameters and returns the item.
- - `peek()`: returns the top item from the stack but does not remove it. It needs no parameters and returns a boolean value.
- - `is_empty()`: tests to see whether the stack is empty. It needs no parameters and returns a boolean value.
- - `size()`: returns the number of items on the stack. It needs no parameters and returns an integer.
+     - `Stack()`: creates a new empty task. Needs no parameter and returns an empty stack.
+     - `push(item`: adds a new item to the top of the stack. It needs the item and return nothing.
+     - `pop()`: removes the top item from the stack. It needs no parameters and returns the item.
+     - `peek()`: returns the top item from the stack but does not remove it. It needs no parameters and returns a boolean value.
+     - `is_empty()`: tests to see whether the stack is empty. It needs no parameters and returns a boolean value.
+     - `size()`: returns the number of items on the stack. It needs no parameters and returns an integer.
