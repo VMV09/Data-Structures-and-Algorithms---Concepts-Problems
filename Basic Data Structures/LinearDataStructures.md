@@ -41,22 +41,58 @@
 # The stack operations are implemented as methods.
 # Further, to implement a stack, which is a collection of elements, it makes sense to utilize the power and # simplicity of the primitive collections provided by Python.
 # We will use a list.
-class Stack:
+class Stack: # Defining the Stack class - since stack is an abstract data type
   def __init__(self):
-    self.items = []
+    self.items = []  # Initializing a list to store all the stack elements
 
-  def is_empty(self):
-    return self.items == []
+  def push(self, element, n): # Defining the push function 
+    if len(self.items) >= n:
+      print("Stack Overflow! Cannot push more elements.")
+      return
+    else:
+      self.items.append(element)
+      print("Pushed to Stack Successfully")
 
-  def push(self, items):
-    self.items.append(item)
-
-  def pop(self):
+  def pop(self):# Defining the pop function
+    if self.is_empty():
+      print("Stack Underflow! Cannot pop from an empty stack.")
+      return None
     return self.items.pop()
 
-  def peek(self):
-    return self.items[len(self.items) - 1]
+  def peek(self):# Defining the peek function - returns the top element
+    if self.is_empty():
+      print("Stack is empty. Nothing to peek.")
+      return None
+    return self.items[-1]
 
-  def size(self):
-    return len(self.items)
+  def is_empty(self):# Check if the stack is empty or has elements
+    return len(self.items) == 0
+
+  def display(self):# Displays the elements in the stak - top is displayed first
+    print("Stack contents (top to bottom):", list(reversed(self.items)))
+
+n = int(input('Enter the size of the stack'))
+s = Stack()
+while True:
+  print("1. Push")
+  print("2. Pop")
+  print("3. Peek")
+  print("4. Display")
+  print("5. Exit")
+  choice = int(input("Enter your choice: "))
+  if choice == 1:
+    element = int(input('Enter the element to be pushed'))
+    s.push(element, n)
+  if choice == 2:
+    popped_element = s.pop()
+    if popped_element is not None:
+      print("Popped element:", popped_element)
+  if choice == 3:
+    peeked_element = s.peek()
+    if peeked_element is not None:
+      print("Peeked element:", peeked_element)
+  if choice == 4:
+    s.display()
+  if choice == 5:
+    break
 ```
