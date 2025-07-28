@@ -35,3 +35,28 @@
      - `peek()`: returns the top item from the stack but does not remove it. It needs no parameters and returns a boolean value.
      - `is_empty()`: tests to see whether the stack is empty. It needs no parameters and returns a boolean value.
      - `size()`: returns the number of items on the stack. It needs no parameters and returns an integer.
+- **Implementing Stack in Python**
+```python
+# The implementation of choice of an abstract data type such as a stack is the creation of a new class.
+# The stack operations are implemented as methods.
+# Further, to implement a stack, which is a collection of elements, it makes sense to utilize the power and # simplicity of the primitive collections provided by Python.
+# We will use a list.
+class Stack:
+  def __init__(self):
+    self.items = []
+
+  def is_empty(self):
+    return self.items == []
+
+  def push(self, items):
+    self.items.append(item)
+
+  def pop(self):
+    return self.items.pop()
+
+  def peek(self):
+    return self.items[len(self.items) - 1]
+
+  def size(self):
+    return len(self.items)
+```
