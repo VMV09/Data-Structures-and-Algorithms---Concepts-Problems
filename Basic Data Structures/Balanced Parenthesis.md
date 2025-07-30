@@ -14,4 +14,26 @@
 -     push it on the stack as a signal that a corresponding closing symbol needs to appear later.
 - If, on the other hand, a symbol is a closing parenthesis:
 -     pop the stack. As long as it is possible to pop the stack to match every closing symbol,
-- If at any time there is no opening symbol on the stack to match a closing symbol, the string is not balanced prop
+- If at any time there is no opening symbol on the stack to match a closing symbol, the string is not balanced properly.
+## The Code
+```python
+import Stack
+def parenthesis_checker(input):
+ s = Stack()
+ balanced = True
+ index = 0
+ while index < len(symbol_string) and balanced:
+   symbol = symbol_string[index]
+   if symbol == "(":
+      s.push(symbol)
+   else:
+     if s.is_empty():
+       balanced = False
+     else:
+       s.pop()
+  index = index + 1
+  if balanced and s.is_empty():
+    return True
+  else:
+    return False
+```
